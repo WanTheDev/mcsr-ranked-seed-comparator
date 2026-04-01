@@ -9,3 +9,4 @@ python seed_comparator.py
 ```
 After you run the script, input your username.
 This will go through all of your matches and showcase other completions of the same seed.
+<img width="943" height="856" alt="example-comparator" src="https://github.com/user-attachments/assets/e72c9391-b350-4654-86a7-7c815410e3ad" />

@@ -3,6 +3,7 @@ A simple tool for finding other completions on seeds you have played in MCSR Ran
 
 ## Usage
 Make sure you have Python installed.
+Using the VSCode command line allows you to click links instead of copy/pasting them.
 Download the repo & open the command line inside the folder, then input:
 ```bash
 pip install requests rich

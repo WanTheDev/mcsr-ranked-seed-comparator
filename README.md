@@ -3,6 +3,7 @@ A simple tool for finding other completions on seeds you have played in MCSR Ran
 
 ## Usage
 Make sure you have Python installed.
+Download the repo & open the command line inside the folder, then input:
 ```bash
 pip install requests rich
 python seed_comparator.py

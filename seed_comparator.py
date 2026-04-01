@@ -387,19 +387,21 @@ def render_seed_leaderboard(pm: dict, others: list, username: str, index: int) -
             f"{seed_type} / {bastion}  ·  "
             f"[magenta]{others_label}[/magenta]"
         ),
+        title_justify="left",
         box=box.SIMPLE_HEAD,
         show_header=True,
         header_style="bold cyan",
         border_style="bright_black",
         title_style="white",
         show_lines=False,
+        pad_edge=False,
     )
-    table.add_column("Rank",   width=5,  justify="right", style="dim")
-    table.add_column("Time",   width=8,  style="bold")
-    table.add_column("Winner", width=20)
-    table.add_column("Loser",  width=20, style="dim")
-    table.add_column("Date",   width=12, style="bright_black")
-    table.add_column("VOD", style="cyan", overflow="fold")
+    table.add_column("Rank",   justify="right", style="dim")
+    table.add_column("Time",   style="bold")
+    table.add_column("Winner")
+    table.add_column("Loser",  style="dim")
+    table.add_column("Date",   style="bright_black")
+    table.add_column("VOD", style="cyan", no_wrap=True, overflow="ignore")
 
     for rank, (tag, m) in enumerate(combined, 1):
         is_player = (tag == "player")
